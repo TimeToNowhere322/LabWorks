@@ -1,7 +1,7 @@
 from math import *
 x = 0.05
 
-while x < 0.4:
+while x < 0.5:
     x += 0.05
     y = atan(x)
     i = 0
