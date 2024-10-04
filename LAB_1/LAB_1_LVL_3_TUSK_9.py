@@ -11,6 +11,6 @@ while x < 0.4:
         z = ( (-1) ** i ) * ( (round(x,2) ** (2 * i + 1) ) / (2 * i + 1) )
         i += 1
         s += z
-        A.append(z)
 
-    print(round(x,2),y,s)
+    print(round(x,2),round(y, 4),round(s, 4))
+print('X   ', 'Y     ', 'Сумма выражения')
