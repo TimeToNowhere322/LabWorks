@@ -4,4 +4,4 @@ from math import *
 A = []
 for x in range(1, 7):
     A.append(x)
-print(prod(A))
+print('Факториал шести',prod(A))
