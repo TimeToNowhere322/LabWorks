@@ -1,7 +1,7 @@
 from math import *
 x = 0.05
 
-while x < 0.4:
+while x < 1:
     x += 0.05
     y = e**(2 * x)
     i = 0
