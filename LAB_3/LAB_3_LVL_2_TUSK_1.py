@@ -9,4 +9,4 @@ while a != '':
         B.append(a)
         break
 z = min(A)
-print(z * 2)
+print('Удвоенное минимальное значение',z * 2)
