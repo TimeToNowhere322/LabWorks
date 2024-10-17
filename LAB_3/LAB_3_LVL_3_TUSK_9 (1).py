@@ -1,6 +1,4 @@
 A = []
-B = []
-C = []
 a = 0
 k = 0
 i = 0
@@ -8,14 +6,17 @@ while a != '':
     a = input()
     if a != '':
         A.append(int(a))
-    else:
-        B.append(a)
-        break
-for a in A:
-    C = [a + 1 for a in A]
-    if C[0] - A[0] == a:
+    else: break
+C = []
+for a in range(len(A)-1):           # перебор элементов от индекса 1, до -2
+    y = A[a+1]     # сосед слева от i + сосед справа от i
+    C.append(y)
+for a in range(len(A)-1):
+    if A[a] +1 == C[a]:
         k += 1
-
-print(A, C, k)
-
-
+    if A[a] - 1 == C[a]:
+        i += 1
+if k >= i:
+    r = k
+else: r = i
+print(A, C,r + 1)
