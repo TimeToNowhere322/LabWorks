@@ -8,8 +8,8 @@ while a != '':
         A.append(int(a))
     else: break
 C = []
-for a in range(len(A)-1):           # перебор элементов от индекса 1, до -2
-    y = A[a+1]     # сосед слева от i + сосед справа от i
+for a in range(len(A)-1):
+    y = A[a+1]    
     C.append(y)
 for a in range(len(A)-1):
     if A[a] +1 == C[a]:
@@ -19,4 +19,5 @@ for a in range(len(A)-1):
 if k >= i:
     r = k
 else: r = i
-print(A, C,r + 1)
+
+print("максимальная длина упорядоченной последовательности",r + 1)
