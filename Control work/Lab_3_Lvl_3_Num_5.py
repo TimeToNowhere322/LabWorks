@@ -1,4 +1,6 @@
+from more_itertools import interleave
 Gen = []
+C = []
 a = 0
 k = 0
 i = 0
@@ -8,6 +10,7 @@ while a != '':
         Gen.append(int(a))
     else: break
 
-Chet = Gen[::2]
+Chet = sorted(Gen[::2])
 Nchet = Gen[1::2]
-Res= sorted(Chet)+Nchet
+
+print(list(interleave(Chet, Nchet)))
